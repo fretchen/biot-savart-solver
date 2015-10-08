@@ -101,15 +101,15 @@ class Wire:
         if Orientation == 'xy':
             X = center[0]+radius*sin(t)
             Y = center[1]+radius*cos(t)
-            Z = zeros(NOP)
+            Z = center[2]+zeros(NOP)
         elif Orientation == 'xz':
             X = center[0]+radius*sin(t)
-            Z = center[1]+radius*cos(t)
-            Y = zeros(NOP)
+            Y = center[1]+zeros(NOP)
+            Z = center[2]+radius*cos(t)
         elif Orientation == 'yz':
-            Y = center[0]+radius*sin(t)
-            Z = center[1]+radius*cos(t)
-            X = zeros(NOP)
+            X = center[0]+zeros(NOP)
+            Y = center[1]+radius*sin(t)
+            Z = center[2]+radius*cos(t)
         
         self.coordz = [X,Y,Z]
         return

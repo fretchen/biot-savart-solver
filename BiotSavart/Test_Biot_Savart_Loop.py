@@ -27,7 +27,7 @@ myShape = myShapes.Wire()
 
 #Loop of radius 1m in the yz plane
 R = 1
-C = [0 , 0]
+C = [0 , 0, 0]
 NOP = 100
 myShape.Create_Loop(C, R, NOP,'yz')
 
